@@ -1,9 +1,8 @@
 <!--
-	Name: Balamurugan Santhosam
+	Name: 
 	File: index.html
 	Date: 02 Feb 2024
-	Description : This html code helps us to create a spalsh page for Mozilla 
-    which includes the inframe for youtube, Firefox logos and panda images.
+	Description : 
 	-->
 
   <!DOCTYPE html>
@@ -125,7 +124,44 @@
         <div class="further-info">
           <!-- inserting the all firefox logos images with srcsets and sizes -->
           <a href="https://www.mozilla.org/en-US/firefox/new/">
+            <img 
+              srcset="firefox_logo-only_RGB(120).png 120w,
+              firefox_logo-only_RGB(400).png 400w"
+              sizes="(max-width : 500px) 120px, 400px"
+              src="firefox_logo-only_RGB(400).png" 
+              alt="firefox logo">
           </a>
+          <a href="https://www.mozilla.org/">
+            <img 
+              srcset="mozilla-dinosaur-head(120).png 120w,
+              mozilla-dinosaur-head.png 400w" 
+              sizes="(max-width : 500px) 120px,400px"  
+              src="mozilla-dinosaur-head.png" 
+              alt="dinosaur  logo">
+          </a>
+          <a href="https://addons.mozilla.org/">
+            <img 
+              srcset="firefox-addons(120).jpg 120w,firefox-addons.jpg 400w"
+              sizes="(max-width : 500px) 120px, 400px"
+              src="firefox-addons.jpg" 
+              alt="fire fox addon logo">
+          </a>
+          <a href="https://developer.mozilla.org/en-US/">
+            <img src="mdn.svg" alt="mdn">
+          </a>
+          <div class="clearfix"></div>
+        </div>
+  
+        <div class="red-panda">
+          <!-- inserting a panda picture element -->
+          <picture>
+            <source 
+              media="(max-width : 600px)" 
+              srcset="red-panda (600).jpg">
+            <img 
+              src="red-panda(1200).jpg" 
+              alt="red panda">
+          </picture>
         </div>
   
       </main>
