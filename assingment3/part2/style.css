@@ -3,3 +3,11 @@ html {
 }
 
 /* Your CSS below here */
+div {
+  width: 300px;
+  line-height: 10;
+  margin: auto;
+  font-size: 1.111rem;
+  background-color: #5c7178;
+  color: black;
+}
