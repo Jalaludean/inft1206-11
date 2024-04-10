@@ -29,39 +29,90 @@
         position: relative;
       }
 
-         <a href="https://www.mozilla.org/">
-          <img 
-            srcset="mozilla-dinosaur-head(120).png 120w,
-            mozilla-dinosaur-head.png 400w" 
-            sizes="(max-width : 500px) 120px,400px"  
-            src="mozilla-dinosaur-head.png" 
-            alt="dinosaur  logo">
-        </a>
-        <a href="https://addons.mozilla.org/">
-          <img 
-            srcset="firefox-addons(120).jpg 120w,firefox-addons.jpg 400w"
-            sizes="(max-width : 500px) 120px, 400px"
-            src="firefox-addons.jpg" 
-            alt="fire fox addon logo">
-        </a>
-        <a href="https://developer.mozilla.org/en-US/">
-          <img src="mdn.svg" alt="mdn">
-        </a>
-        <div class="clearfix"></div>
-      </div>
+      /* Header styling */
 
-      <div class="red-panda">
-        <!-- inserting a panda picture element -->
-        <picture>
-          <source 
-            media="(max-width : 600px)" 
-            srcset="red-panda (600).jpg">
-          <img 
-            src="red-panda(1200).jpg" 
-            alt="red panda">
-        </picture>
-      </div>
+      header {
+        height: 150px;
+      }
 
+      header img {
+        width: 100px;
+        position: absolute;
+        right: 32.5px;
+        top: 32.5px;
+      }
+
+      h1 {
+        font-size: 50px;
+        line-height: 140px;
+        margin: 0 0 0 32.5px;
+      }
+
+      /* main section and video styling */
+
+      main {
+        background: #ccc;
+      }
+
+      article {
+        padding: 20px;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        line-height: 2;
+      }
+
+      iframe {
+        float: left;
+        margin: 0 20px 20px 0;
+        max-width: 100%;
+      }
+
+      /* further info links */
+
+      .further-info {
+        clear: left;
+        padding: 40px 0;
+        background: #c13832;
+        box-shadow: inset 0 3px 2px rgba(0,0,0,0.5),
+                    inset 0 -3px 2px rgba(0,0,0,0.5);
+      }
+
+      .further-info a {
+        width: 25%;
+        display: block;
+        float: left;
+      }
+
+      .further-info img {
+        max-width: 100%;
+      }
+
+      .clearfix {
+        clear: both;
+      }
+
+      /* Red panda image */
+
+      .red-panda img {
+        display: block;
+        max-width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Mozilla</h1>
+      <img src="firefox_logo-only_RGB(120).png" alt="firefox logo">
+    </header>
+
+    <main>
+      <article>
+       
     </main>
   </body>
 </html>
